@@ -259,24 +259,9 @@ window.addEventListener("scroll", ()=>{
     });
 });
 
-const heartEmojis = ["💖","💝","💗","💓","💞","🎁","💝","❤️","💕","🥰","❤️","🧡","💋"];
 
-function createHearts() {
-    heartEmojis.forEach(emoji => {
-        const heart = document.createElement('div');
-        heart.className = 'heart';
-        heart.style.left = Math.random() * 100 + 'vw'; // random horizontal position
-        heart.style.fontSize = (20 + Math.random() * 25) + 'px'; // random size
-        heart.innerHTML = emoji;
-        document.body.appendChild(heart);
 
-        // Remove after animation
-        setTimeout(() => heart.remove(), 5000);
-    });
-}
-
-// Call continuously every 500ms
-setInterval(createHearts, 500);
+    
 
 
 /* 🎵 AUTOPLAY FIX */
